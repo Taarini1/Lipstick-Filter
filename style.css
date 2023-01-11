@@ -1,0 +1,41 @@
+body{
+    background-repeat: no-repeat;
+background-size:1750px;
+}
+
+button{
+    width:150px;
+    height:50px;
+    border-radius: 50px;
+    color:rgb(251, 255, 0);
+    background-color:orangered;
+    font-size:large;
+    
+}
+button:hover{
+    
+    cursor: pointer;
+}
+
+.heading{
+    animation-delay:4s ;
+    animation-name: btn_animate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    width:300px;
+}
+
+@keyframes btn_animate{
+    from{box-shadow: 1px 1px 30px rgb(162, 230, 35)}
+    to{box-shadow: 1px 1px 30px rgb(47, 0, 255)}
+}
+
+canvas{
+    animation-name:canvas_animate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes canvas_animate{
+    from{box-shadow: 1px 1px 50px rgb(35, 230, 188)}
+    to{box-shadow: 1px 1px 50px rgb(255, 208, 0)}
+}
